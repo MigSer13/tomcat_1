@@ -6,6 +6,13 @@
 
   <display-name>Archetype Created Web Application</display-name>
 
-
+  <servlet>
+    <servlet-name>servletProduct</servlet-name>
+    <servlet-class>com.geekbrains.app.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletProduct</servlet-name>
+    <url-pattern>/Products</url-pattern>
+  </servlet-mapping>
 
 </web-app>
