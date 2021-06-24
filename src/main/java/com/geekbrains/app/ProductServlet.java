@@ -30,8 +30,9 @@ public class ProductServlet extends HttpServlet {
         productsList.add("Чай");
         resp.getWriter().printf("<html><body>");
         for (int i = 1; i <= 10; i++) {
-            //new Product(i, productsList.get((int)(Math.random()*10)), (int) (Math.random()*100));
-            resp.getWriter().print("<h1>"+i+"</h1>");
+            new Product(i, productsList.get((int)(Math.random()*10)), (int) (Math.random()*100));
+            resp.getWriter().print(""+i+" - "+productsList.get((int)(Math.random()*10)) + ", "+(int)(Math.random()*100) + "руб.");
+            //resp.getWriter().print("<h1>"+i+"</h1>");
 
         }
         resp.getWriter().printf("</body></html>");
